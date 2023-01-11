@@ -1,14 +1,15 @@
-package com.example.demo.user;
+package com.mapJump.api.user;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
 
 @AllArgsConstructor
 @Data
+@Builder
 public class CreateUserDto {
 
-    private String firstName;
-    private String lastName;
-    private String phoneNumber;
-    private String email;
+    private String username;
+    private String password;
 
 }

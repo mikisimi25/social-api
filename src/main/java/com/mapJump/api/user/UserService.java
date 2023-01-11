@@ -1,4 +1,4 @@
-package com.example.demo.user;
+package com.mapJump.api.user;
 
 import java.util.List;
 
