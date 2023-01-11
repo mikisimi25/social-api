@@ -33,6 +33,10 @@ public class UserServiceImpl implements UserService {
             return null;
         }
 
+        if(userRepository.findByUsername(userDto.getUsername()) != null) {
+            return null;
+        }
+
         User user = Converter.convertUserDtoToUser(userDto);
 
         return userRepository.save(user);
