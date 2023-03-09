@@ -1,7 +1,8 @@
 package com.mapJump.api;
 
-import com.mapJump.api.user.CreateUserDto;
-import com.mapJump.api.user.User;
+import com.mapJump.api.user.model.CreateUserDto;
+import com.mapJump.api.user.model.User;
+import com.mapJump.api.user.model.UserDto;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -16,5 +17,15 @@ public class Converter {
                 .build();
 
     }
+
+    public static UserDto convertUserToUserDto(User user) {
+
+        return UserDto
+                .builder()
+                .username(user.getUsername())
+                .build();
+
+    }
+
 
 }

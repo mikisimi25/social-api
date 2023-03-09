@@ -1,4 +1,4 @@
-package com.mapJump.api.user;
+package com.mapJump.api.user.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
